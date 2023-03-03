@@ -8,11 +8,11 @@
 
 
 ## Dynamic Allocator :
-   - **Functions definitions in dynamic_allocator.c**
-   - Objective:
+   **- Functions definitions in dynamic_allocator.c**
+   **- Objective:**
         Handle memory blocks dynamically by using LISTS to allocate or free any required space either by the OS or any user program   
    - The main functions are :
-     1. initialize_MemBlocksList
+     **1. initialize_MemBlocksList**
         - Function Role: 
           - Currently, the “MemBlockNodes” array is already created with empty “MAX_MEM_BLOCK_CNT” block elements.
           - “AvailableMemBlocksList” is empty without any pointers or nodes.
@@ -27,7 +27,7 @@
           - If a block found with sva equal to given va, return this block.
           - If not found, return NULL.
 
-     3. alloc_block_FF
+     **3. alloc_block_FF**
         - Function Role: 
           -	This function searches for a free memory block in the FreeMemBlocksList with a size greater than or equal input size using FIRST FIT STRATEGY to be allocated later on in the memory.
           -	The possible CASES results from the search using FF strategy are:
@@ -37,12 +37,12 @@
                - A new block with the required size, shall be RETURNED by the end of the function.
                - An updated block with the remaining space, shall be kept in the list
 
-     4. alloc_block_BF
+     **4. alloc_block_BF**
         - Function Role: 
           - This function searches for a free memory block in the FreeMemBlocksList with a size greater than or equal input size using BEST FIT STRATEGY to be allocated later on in the memory.
           - The possible CASES results from the search using BF strategy are the same that can be occurred by applying FF.
 
-     5. insert_sorted_allocList
+     **5. insert_sorted_allocList**
         - Function Role: 
           - This function takes a block and insert it in the AllocMemBlocksList.
           - All blocks inserted in AllocMemBlocksList are placed in a sorted ascending order based on each block’s sva.
@@ -50,7 +50,7 @@
             - Case 1: If the AllocMemBlocksList is empty  insert the given block at the head of the list.
             - Case 2: Otherwise  insert the given block in its correct location according to its sva (simply by iterate on the AllocMemBlocksList).
 
-     6. insert_sorted_with_merge_freeList
+     **6. insert_sorted_with_merge_freeList**
         - Function Role: 
           - It takes a block and insert it in the FreeMemBlocksList.
           - All blocks inserted in FreeMemBlocksList are placed in a sorted ascending order based on each block’s sva.
@@ -63,7 +63,7 @@
               - Case 4: Merge with next
               - Case 5: Merge with previous and next
 
-     7. alloc_block_NF
+     **7. alloc_block_NF**
         - Function Role: 
           - This function searches for a free memory block in the FreeMemBlocksList with a size greater than or equal input size using NEXT FIT STRATEGY to be allocated later on in the memory.
           - The possible CASES results from the search using NF strategy are the same as FF & BF.
