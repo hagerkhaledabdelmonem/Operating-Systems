@@ -51,9 +51,9 @@
      - createSharedObject(Kernel side)
      - getSharedObject(Kernel side)
    - Semaphores
-     - createSemaphore()
-     - waitSemaphore()
-     - signalSemaphore()
+     - createSemaphore
+     - waitSemaphore
+     - signalSemaphore
 
 ## **Note**
 
