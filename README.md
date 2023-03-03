@@ -3,11 +3,11 @@
 
 
 ## Command Prompt:
-	Add an "Autocomplete" feature to command prompt, which allow the user to list all commands that start with a given set of characters.
-	 The user should write set of characters then press enter:
-◦	If the set of characters are complete and represent an existing command, then execute it (Already implemented). 
-◦	Else, if there’s one (or more) command that start with the given characters, print their names (ONE PER LINE)
-◦	Else, print the “unknown command” message that is already exist in the given code.
+   - Add an "Autocomplete" feature to command prompt, which allow the user to list all commands that start with a given set of characters.
+   - The user should write set of characters then press enter:
+     - If the set of characters are complete and represent an existing command, then execute it (Already implemented). 
+     - Else, if there’s one (or more) command that start with the given characters, print their names (ONE PER LINE)
+     - Else, print the “unknown command” message that is already exist in the given code.
 
 
 ## Dynamic Allocator:
@@ -15,13 +15,13 @@
         Handle memory blocks dynamically by using LISTS to allocate or free any required space either by the OS or any user program   
    - The main functions are “Functions definitions in dynamic_allocator.c “ :
      - initialize_MemBlocksList
-        Function Role: 
-        -Currently, the “MemBlockNodes” array is already created with empty “MAX_MEM_BLOCK_CNT” block elements.
-        -“AvailableMemBlocksList” is empty without any pointers or nodes.
-        -This function shall:
-            - ZEROing the size & pointers of “AvailableMemBlocksList”.
-            - Then, fill the list by making it points to the first n=numOfBlocks empty elements exist in “MemBlockNodes” array.
-            - At the end of this function, the “AvailableMemBlocksList” shall be initialized as a linked list of “numOfBlocks” elements from those that already exist in   the “MemBlockNodes” array.
+            - Function Role: 
+                 - Currently, the “MemBlockNodes” array is already created with empty “MAX_MEM_BLOCK_CNT” block elements.
+                 - “AvailableMemBlocksList” is empty without any pointers or nodes.
+                 - This function shall:
+                     - ZEROing the size & pointers of “AvailableMemBlocksList”.
+                     - Then, fill the list by making it points to the first n=numOfBlocks empty elements exist in “MemBlockNodes” array.
+                     - At the end of this function, the “AvailableMemBlocksList” shall be initialized as a linked list of “numOfBlocks” elements from those that already exist in   the “MemBlockNodes” array.
 
 	find_block
 Function Role: 
