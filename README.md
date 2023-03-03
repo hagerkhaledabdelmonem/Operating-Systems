@@ -15,7 +15,7 @@
         Handle memory blocks dynamically by using LISTS to allocate or free any required space either by the OS or any user program   
    - The main functions are “Functions definitions in dynamic_allocator.c “ :
      - initialize_MemBlocksList
-            - Function Role: 
+      - Function Role: 
                  - Currently, the “MemBlockNodes” array is already created with empty “MAX_MEM_BLOCK_CNT” block elements.
                  - “AvailableMemBlocksList” is empty without any pointers or nodes.
                  - This function shall:
