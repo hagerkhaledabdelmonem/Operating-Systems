@@ -16,12 +16,12 @@
    - The main functions are “Functions definitions in dynamic_allocator.c “ :
      - initialize_MemBlocksList
         Function Role: 
-        •	Currently, the “MemBlockNodes” array is already created with empty “MAX_MEM_BLOCK_CNT” block elements.
-        •	“AvailableMemBlocksList” is empty without any pointers or nodes.
-        •	This function shall:
-          •	ZEROing the size & pointers of “AvailableMemBlocksList”.
-          •	Then, fill the list by making it points to the first n=numOfBlocks empty elements exist in “MemBlockNodes” array.
-          •	At the end of this function, the “AvailableMemBlocksList” shall be initialized as a linked list of “numOfBlocks” elements from those that already exist in   the “MemBlockNodes” array.
+        -Currently, the “MemBlockNodes” array is already created with empty “MAX_MEM_BLOCK_CNT” block elements.
+        -“AvailableMemBlocksList” is empty without any pointers or nodes.
+        -This function shall:
+            - ZEROing the size & pointers of “AvailableMemBlocksList”.
+            - Then, fill the list by making it points to the first n=numOfBlocks empty elements exist in “MemBlockNodes” array.
+            - At the end of this function, the “AvailableMemBlocksList” shall be initialized as a linked list of “numOfBlocks” elements from those that already exist in   the “MemBlockNodes” array.
 
 	find_block
 Function Role: 
