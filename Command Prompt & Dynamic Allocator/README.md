@@ -1,4 +1,4 @@
-**“Functions definitions in dynamic_allocator.c “**
+# **Functions definitions in dynamic_allocator.c**
 ## Command Prompt :
    - Add an "Autocomplete" feature to command prompt, which allow the user to list all commands that start with a given set of characters.
    - The user should write set of characters then press enter:
@@ -20,13 +20,13 @@
             - Then, fill the list by making it points to the first n=numOfBlocks empty elements exist in “MemBlockNodes” array.
             - At the end of this function, the “AvailableMemBlocksList” shall be initialized as a linked list of “numOfBlocks” elements from those that already exist in the “MemBlockNodes” array.
 
-	find_block
-Function Role: 
-•	It shall search for the given start virtual address (va) in the given list (blockList).
-•	If a block found with sva equal to given va, return this block.
-•	If not found, return NULL.
+     2.find_block
+        - Function Role: 
+          -	It shall search for the given start virtual address (va) in the given list (blockList).
+          - If a block found with sva equal to given va, return this block.
+          - If not found, return NULL.
 
-	alloc_block_FF
+3.	alloc_block_FF
 Function Role: 
 •	This function searches for a free memory block in the FreeMemBlocksList with a size greater than or equal input size using FIRST FIT STRATEGY to be allocated later on in the memory.
 •	The possible CASES results from the search using FF strategy are:
