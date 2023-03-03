@@ -21,7 +21,7 @@
             - Then, fill the list by making it points to the first n=numOfBlocks empty elements exist in “MemBlockNodes” array.
             - At the end of this function, the “AvailableMemBlocksList” shall be initialized as a linked list of “numOfBlocks” elements from those that already exist in the “MemBlockNodes” array.
 
-     2. find_block
+     **2. find_block**
         - Function Role: 
           -	It shall search for the given start virtual address (va) in the given list (blockList).
           - If a block found with sva equal to given va, return this block.
