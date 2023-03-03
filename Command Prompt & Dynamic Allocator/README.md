@@ -1,5 +1,4 @@
-# **Functions definitions in dynamic_allocator.c**
-## Command Prompt :
+## Command Prompt : **Functions definitions in command_prompt.c**
    - Add an "Autocomplete" feature to command prompt, which allow the user to list all commands that start with a given set of characters.
    - The user should write set of characters then press enter:
      - If the set of characters are complete and represent an existing command, then execute it (Already implemented). 
@@ -7,7 +6,7 @@
      - Else, print the “unknown command” message that is already exist in the given code.
 
 
-## Dynamic Allocator :
+## Dynamic Allocator : **Functions definitions in dynamic_allocator.c**
    - Objective:
         Handle memory blocks dynamically by using LISTS to allocate or free any required space either by the OS or any user program   
    - The main functions are :
