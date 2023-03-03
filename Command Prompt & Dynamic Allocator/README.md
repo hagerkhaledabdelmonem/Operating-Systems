@@ -28,13 +28,13 @@
 
      3. alloc_block_FF
         - Function Role: 
-            -	This function searches for a free memory block in the FreeMemBlocksList with a size greater than or equal input size using FIRST FIT STRATEGY to be allocated later on in the memory.
-            -	The possible CASES results from the search using FF strategy are:
-               -	Case 1: no suitable block is found  return NULL.
-               -	Case 2: a block is found with EXACT size  remove it from the FreeMemBlocksList and return it.
-               -	Case 3: a block is found with GREATER size  divide it into 2 blocks:
-                  -	A new block with the required size, shall be RETURNED by the end of the function.
-                  -	An updated block with the remaining space, shall be kept in the list
+          -	This function searches for a free memory block in the FreeMemBlocksList with a size greater than or equal input size using FIRST FIT STRATEGY to be allocated later on in the memory.
+          -	The possible CASES results from the search using FF strategy are:
+            - Case 1: no suitable block is found  return NULL.
+            - Case 2: a block is found with EXACT size  remove it from the FreeMemBlocksList and return it.
+            - Case 3: a block is found with GREATER size  divide it into 2 blocks:
+               - A new block with the required size, shall be RETURNED by the end of the function.
+               - An updated block with the remaining space, shall be kept in the list
 
       4.	alloc_block_BF
       Function Role: 
