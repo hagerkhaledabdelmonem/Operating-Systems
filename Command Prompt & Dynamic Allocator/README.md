@@ -1,4 +1,4 @@
-## Command Prompt : 
+# Command Prompt : 
    - **Functions definitions in command_prompt.c**
    - Add an "Autocomplete" feature to command prompt, which allow the user to list all commands that start with a given set of characters.
    - The user should write set of characters then press enter:
@@ -7,11 +7,12 @@
      - Else, print the “unknown command” message that is already exist in the given code.
 
 
-## Dynamic Allocator :
-   **- Functions definitions in dynamic_allocator.c**
-   **- Objective:**
-        Handle memory blocks dynamically by using LISTS to allocate or free any required space either by the OS or any user program   
-   - The main functions are :
+# Dynamic Allocator :
+   - ## **Functions definitions in dynamic_allocator.c**
+   - ## **Objective :**
+       - Handle memory blocks dynamically by using LISTS to allocate or free any required space either by the OS or any user program   
+   - ## **The Main Functions are :**
+   
      **1. initialize_MemBlocksList**
         - Function Role: 
           - Currently, the “MemBlockNodes” array is already created with empty “MAX_MEM_BLOCK_CNT” block elements.
